@@ -1,0 +1,129 @@
+# Copyright (C) 2010 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+##      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prebuilt libraries that are needed to build open-source libraries
+PRODUCT_COPY_FILES := \
+   vendor/samsung/transform/proprietary/libril.so:obj/lib/libril.so \
+   vendor/samsung/transform/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
+   vendor/samsung/transform/proprietary/libcamera.so:obj/lib/libcamera.so \
+   vendor/samsung/transform/proprietary/libs3cjpeg.so:obj/lib/libs3cjpeg.so \
+   vendor/samsung/transform/proprietary/libsecgps.so:obj/lib/libsecgps.so  
+ 
+
+# All the blobs necessary for momentalikes
+PRODUCT_COPY_FILES += \
+    vendor/samsung/transform/proprietary/gps.conf:system/etc/gps.conf \
+    vendor/samsung/transform/proprietary/gps.xml:system/vendor/etc/gps.xml \
+    vendor/samsung/transform/proprietary/libril.so:system/lib/libril.so \
+    vendor/samsung/transform/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
+    vendor/samsung/transform/proprietary/rild:system/bin/rild 
+
+# Audio
+PRODUCT_COPY_FILES += \
+    vendor/samsung/transform/proprietary/libaudio.so:system/lib/libaudio.so \
+    vendor/samsung/transform/proprietary/liba2dp.so:system/lib/liba2dp.so \
+    vendor/samsung/transform/proprietary/lib_VoiceBooster_ARM_GA_Library.so:system/lib/lib_VoiceBooster_ARM_GA_Library.so 
+
+# Sensors
+PRODUCT_COPY_FILES += \
+    vendor/samsung/transform/proprietary/akmd2:system/bin/akmd2
+
+# Wifi
+PRODUCT_COPY_FILES += \
+    vendor/samsung/transform/proprietary/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    vendor/samsung/transform/proprietary/libwlandut.so:system/lib/libwlandut.so \
+    vendor/samsung/transform/proprietary/libwlservice.so:system/lib/libwlservice.so \
+    vendor/samsung/transform/proprietary/libwpa_client.so:system/lib/libwpa_client.so \
+    vendor/samsung/transform/proprietary/wlservice:system/bin/wlservice \
+    vendor/samsung/transform/proprietary/wpa_supplicant:system/bin/wpa_supplicant \
+    vendor/samsung/transform/proprietary/wifi.conf:system/etc/wifi/wifi.conf \
+    vendor/samsung/transform/proprietary/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    vendor/samsung/transform/proprietary/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin
+    
+#
+# CDMA data
+#
+PRODUCT_COPY_FILES += \
+    vendor/samsung/transform/proprietary/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/samsung/transform/proprietary/chap-secrets:system/etc/ppp/chap-secrets \
+    vendor/samsung/transform/proprietary/init.gprs-pppd:system/etc/init.gprs-pppd \
+    vendor/samsung/transform/proprietary/pppd_runner:system/bin/pppd_runner \
+    vendor/samsung/transform/proprietary/pppd:system/bin/pppd \
+    vendor/samsung/transform/proprietary/ip-down:system/etc/ppp/ip-down \
+    vendor/samsung/transform/proprietary/ip-down-ppp0:system/etc/ppp/ip-down-ppp0 \
+    vendor/samsung/transform/proprietary/ip-up:system/etc/ppp/ip-up \
+    vendor/samsung/transform/proprietary/ip-up-ppp0:system/etc/ppp/ip-up-ppp0 \
+    vendor/samsung/transform/proprietary/ip-up-vpn:system/etc/ppp/ip-up-vpn \
+    vendor/samsung/transform/proprietary/options:system/etc/ppp/options \
+    vendor/samsung/transform/proprietary/pap-secrets:system/etc/ppp/pap-secrets
+
+# Camera
+PRODUCT_COPY_FILES += \
+    vendor/samsung/transform/proprietary/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/transform/proprietary/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/transform/proprietary/libs263domxoc.so:system/lib/libs263domxoc.so \
+    vendor/samsung/transform/proprietary/libs263eomxoc.so:system/lib/libs263eomxoc.so \
+    vendor/samsung/transform/proprietary/libs264domxoc.so:system/lib/libs264domxoc.so \
+    vendor/samsung/transform/proprietary/libsavscmn.so:system/lib/libsavscmn.so \
+    vendor/samsung/transform/proprietary/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
+    vendor/samsung/transform/proprietary/libsac3domxoc.so:system/lib/libsac3domxoc.so \
+    vendor/samsung/transform/proprietary/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
+    vendor/samsung/transform/proprietary/libsamreomxoc.so:system/lib/libsamreomxoc.so \
+    vendor/samsung/transform/proprietary/libSamsungAFConverter.so:system/lib/libSamsungAFConverter.so \
+    vendor/samsung/transform/proprietary/libsamsunglmeq.so:system/lib/libsamsunglmeq.so \
+    vendor/samsung/transform/proprietary/libsamsungr2vs.so:system/lib/libsamsungr2vs.so \
+    vendor/samsung/transform/proprietary/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
+    vendor/samsung/transform/proprietary/libsavidocn.so:system/lib/libsavidocn.so \
+    vendor/samsung/transform/proprietary/libsavidreg.so:system/lib/libsavidreg.so \
+    vendor/samsung/transform/proprietary/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
+    vendor/samsung/transform/proprietary/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
+    vendor/samsung/transform/proprietary/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
+    vendor/samsung/transform/proprietary/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
+    vendor/samsung/transform/proprietary/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
+    vendor/samsung/transform/proprietary/libsvidmiooc.so:system/lib/libsvidmiooc.so \
+    vendor/samsung/transform/proprietary/libswmadomxoc.so:system/lib/libswmadomxoc.so \
+    vendor/samsung/transform/proprietary/libswmfdocn.so:system/lib/libswmfdocn.so \
+    vendor/samsung/transform/proprietary/libswmfdreg.so:system/lib/libswmfdreg.so
+
+# Gps
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/transform/proprietary/libsecgps.so:system/lib/libsecgps.so \
+    vendor/samsung/transform/proprietary/libsecril-client.so:system/lib/libsecril-client.so 
+
+# HW  
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/transform/proprietary/lights.transform.so:system/lib/hw/lights.transform.so 
+
+# VOLD
+PRODUCT_COPY_FILES += \
+	vendor/samsung/transform/proprietary/vold.fstab:system/etc/vold.fstab \
+	vendor/samsung/transform/proprietary/vold:system/bin/vold
+		
+	
+# Prebuilt kl keymaps
+PRODUCT_COPY_FILES += \
+  	vendor/samsung/transform/proprietary/melfas_ts_input.kl:system/usr/keylayout/melfas_ts_input.kl \
+	vendor/samsung/transform/proprietary/s3c-keypad-rev0050.kl:system/usr/keylayout/s3c-keypad-rev0050.kl \
+	vendor/samsung/transform/proprietary/sec_headset.kl:system/usr/keylayout/sec_headset.kl \
+	vendor/samsung/transform/proprietary/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+	vendor/samsung/transform/proprietary/qwerty.kl:system/usr/keylayout/qwerty.kl 
+
+# Generated kcm keymaps
+PRODUCT_COPY_FILES += \
+	vendor/samsung/transform/proprietary/s3c-keypad-rev0050.kcm.bin:system/usr/keychars/s3c-keypad-rev0050.kcm.bin \
+	vendor/samsung/transform/proprietary/optjoy_device.kcm.bin:system/usr/keychars/optjoy_device.kcm.bin \
+	vendor/samsung/transform/proprietary/melfas_ts_input.kcm.bin:system/usr/keychars/melfas_ts_input.kcm.bin \
+	vendor/samsung/transform/proprietary/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin 
+	
